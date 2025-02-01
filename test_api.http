@@ -1,0 +1,21 @@
+###
+POST http://127.0.0.1:8080/todos
+Content-Type: application/json
+
+{
+  "title": "고양이 양치 시키기",
+  "description": "버벅 치약으로 양치 시켜야 한다",
+  "tag" : "고양이"
+}
+
+### GET /todos/{id}
+GET http://127.0.0.1:8080/todos/03a9f5b7-f765-446d-b99f-bb47a14d7cbc
+
+### GET /todos/tag
+GET http://127.0.0.1:8080/todos/tag?tag=고양이
+
+### GET /todos/title
+GET http://127.0.0.1:8080/todos/title?title=고양이 양치 시키기
+
+### DELETE /todos/{id}
+DELETE http://127.0.0.1:8080/todos/03a9f5b7-f765-446d-b99f-bb47a14d7cbc
